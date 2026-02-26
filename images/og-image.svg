@@ -1,0 +1,50 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fallback background if hero photo is unavailable -->
+  <rect width="1200" height="630" fill="#162d17"/>
+
+  <!-- Hero photo background — place hero.webp in the same images/ folder -->
+  <image href="hero.webp" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Gradient overlay: opaque left, fades to transparent right -->
+  <defs>
+    <linearGradient id="overlay" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#162d17" stop-opacity="0.94"/>
+      <stop offset="55%"  stop-color="#162d17" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#162d17" stop-opacity="0.30"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#overlay)"/>
+
+  <!-- Amber accent bar -->
+  <rect x="80" y="88" width="5" height="132" fill="#C9922A"/>
+
+  <!-- Gotherington -->
+  <text x="108" y="162"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="74" font-weight="700"
+        fill="#ffffff" letter-spacing="-1">Gotherington</text>
+
+  <!-- Village Hall -->
+  <text x="108" y="248"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="74" font-weight="700"
+        fill="#ffffff" letter-spacing="-1">Village Hall</text>
+
+  <!-- Tagline -->
+  <text x="108" y="308"
+        font-family="Arial,Helvetica,sans-serif"
+        font-size="27" fill="rgba(255,255,255,0.78)" letter-spacing="0.3">Over 120 years at the heart of our community</text>
+
+  <!-- Bottom green bar -->
+  <rect x="0" y="556" width="1200" height="74" fill="#2C5F2E" fill-opacity="0.95"/>
+
+  <!-- Bottom left: address + charity -->
+  <text x="80" y="600"
+        font-family="Arial,Helvetica,sans-serif"
+        font-size="20" fill="rgba(255,255,255,0.82)">Freeman Field, Gotherington, Gloucestershire  ·  Registered Charity No. 274869</text>
+
+  <!-- Bottom right: domain -->
+  <text x="1120" y="600"
+        font-family="Arial,Helvetica,sans-serif"
+        font-size="20" fill="#C9922A" text-anchor="end">gotheringtonvillagehall.org.uk</text>
+</svg>

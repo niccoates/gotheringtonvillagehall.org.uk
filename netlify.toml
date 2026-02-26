@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+# Redirect .html URLs to their clean equivalents (301 permanent)
+[[redirects]]
+  from = "/*.html"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# Serve clean URLs by rewriting to the underlying .html files
+[[redirects]]
+  from = "/:page"
+  to = "/:page.html"
+  status = 200
