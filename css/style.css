@@ -453,6 +453,52 @@ p:last-child {
     margin-bottom: 0;
 }
 
+/* ----- Facilities list ----- */
+.facilities-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.facility-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.facility-icon {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.1rem;
+    color: var(--green);
+}
+
+.facility-icon svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.facility-item strong {
+    display: block;
+    color: var(--green);
+    margin-bottom: 0.1rem;
+}
+
+.facility-item p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
 /* ----- Event cards ----- */
 .events-grid {
     display: grid;
